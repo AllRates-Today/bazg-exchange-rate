@@ -1,10 +1,10 @@
 # Swiss Federal Office for Customs and Border Security Exchange Rate API client
 
-Official **Swiss Federal Office for Customs and Border Security** (Switzerland) daily exchange rates in Node.js / TypeScript — ~72 currencies against the CHF, with history back to 2000. Zero dependencies, works in Node 18+, Bun, Deno, and edge runtimes (uses global `fetch`).
+Official **Swiss Federal Office for Customs and Border Security** (Switzerland) daily exchange rates in Node.js / TypeScript — 73 currencies against the CHF, with history back to 2000. Zero dependencies, works in Node 18+, Bun, Deno, and edge runtimes (uses global `fetch`).
 
 These are the *published tax authority rates* required for tax filings, customs valuations, audits, and compliant invoicing — not moving market rates. Every response carries the publisher's own publication date.
 
-Powered by [AllRatesToday](https://allratestoday.com/tax-authority-rates-api/bazg/). Get a free API key at [allratestoday.com/register](https://allratestoday.com/register) — 300 requests/month, no credit card.
+Powered by [AllRatesToday](https://allratestoday.com/tax-authority-rates-api/bazg/). Get a free API key at [allratestoday.com/register](https://allratestoday.com/register) — no credit card required.
 
 ## Install
 
@@ -41,6 +41,14 @@ const series = await getHistory(
   { apiKey: 'art_live_...' }
 );
 ```
+
+## Currencies covered
+
+Swiss Federal Office for Customs and Border Security currently publishes rates covering **74 currencies** (as of the latest table):
+
+`AED` · `ALL` · `ARS` · `AUD` · `AZN` · `BAM` · `BDT` · `BGN` · `BHD` · `BRL` · `CAD` · `CHF` · `CLP` · `CNY` · `COP` · `CRC` · `CZK` · `DKK` · `DOP` · `DZD` · `EGP` · `ETB` · `EUR` · `GBP` · `GEL` · `GTQ` · `HKD` · `HNL` · `HUF` · `IDR` · `ILS` · `INR` · `ISK` · `JPY` · `KES` · `KHR` · `KRW` · `KWD` · `KYD` · `KZT` · `LBP` · `LKR` · `LYD` · `MAD` · `MUR` · `MXN` · `MYR` · `NGN` · `NOK` · `NZD` · `OMR` · `PAB` · `PEN` · `PHP` · `PKR` · `PLN` · `QAR` · `RON` · `RSD` · `RUB` · `SAR` · `SEK` · `SGD` · `THB` · `TND` · `TRY` · `TWD` · `TZS` · `UAH` · `USD` · `UYU` · `VES` · `VND` · `ZAR`
+
+Pairs the tax authority does not print directly are resolved from this table (see below).
 
 ## Published vs derived rates
 
