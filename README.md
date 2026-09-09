@@ -70,10 +70,10 @@ const pair = await getRate('EUR', 'CHF', { apiKey: 'art_live_...' });
 {
   bank: 'bazg',
   name: 'Swiss Federal Office for Customs and Border Security',
-  rate_date: '2026-08-12',   // Swiss Federal Office for Customs and Border Security's own publication date
+  rate_date: '2026-09-09',   // Swiss Federal Office for Customs and Border Security's own publication date
   source: 'EUR',
   target: 'CHF',
-  rate: 0.94441,
+  rate: 0.94981,
   rate_type: 'reference',
   derived: false,
   method: 'published',
@@ -98,9 +98,9 @@ console.log(table.rate_date, table.rates.length);
 {
   bank: 'bazg',
   name: 'Swiss Federal Office for Customs and Border Security',
-  rate_date: '2026-08-12',
+  rate_date: '2026-09-09',
   rates: [
-    { "base": "EUR", "quote": "CHF", "type": "reference", "value": 0.94441 },
+    { "base": "EUR", "quote": "CHF", "type": "reference", "value": 0.94981 },
     // … the rest of the published table (73 currencies vs CHF)
   ],
   disclaimer: '…'
@@ -140,7 +140,7 @@ Paid plans. One resolved rate per publication date — ready for charting, reval
 import { getHistory } from 'bazg-exchange-rate';
 
 const series = await getHistory(
-  { source: 'EUR', target: 'CHF', from: '2026-01-01', to: '2026-08-12' },
+  { source: 'EUR', target: 'CHF', from: '2026-01-01', to: '2026-09-09' },
   { apiKey: 'art_live_...' }
 );
 ```
@@ -153,11 +153,11 @@ const series = await getHistory(
   source: 'EUR',
   target: 'CHF',
   from: '2026-01-01',
-  to: '2026-08-12',
+  to: '2026-09-09',
   count: 152,
   rates: [
     // one entry per publication date
-    { date: '2026-08-12', rate: 0.94441, rate_type: 'reference', derived: false, method: 'published' },
+    { date: '2026-09-09', rate: 0.94981, rate_type: 'reference', derived: false, method: 'published' },
     // …
   ],
   disclaimer: '…'
@@ -170,9 +170,9 @@ Pass `{ symbol: 'EUR' }` instead of `source`/`target` to get the raw published r
 
 ## 🗺️ Currencies covered
 
-Swiss Federal Office for Customs and Border Security currently publishes rates covering **74 currencies** (as of the latest table):
+Swiss Federal Office for Customs and Border Security currently publishes rates covering **73 currencies** against the CHF (as of the latest table):
 
-`AED` · `ALL` · `ARS` · `AUD` · `AZN` · `BAM` · `BDT` · `BGN` · `BHD` · `BRL` · `CAD` · `CHF` · `CLP` · `CNY` · `COP` · `CRC` · `CZK` · `DKK` · `DOP` · `DZD` · `EGP` · `ETB` · `EUR` · `GBP` · `GEL` · `GTQ` · `HKD` · `HNL` · `HUF` · `IDR` · `ILS` · `INR` · `ISK` · `JPY` · `KES` · `KHR` · `KRW` · `KWD` · `KYD` · `KZT` · `LBP` · `LKR` · `LYD` · `MAD` · `MUR` · `MXN` · `MYR` · `NGN` · `NOK` · `NZD` · `OMR` · `PAB` · `PEN` · `PHP` · `PKR` · `PLN` · `QAR` · `RON` · `RSD` · `RUB` · `SAR` · `SEK` · `SGD` · `THB` · `TND` · `TRY` · `TWD` · `TZS` · `UAH` · `USD` · `UYU` · `VES` · `VND` · `ZAR`
+🇦🇪 `AED` · 🇦🇱 `ALL` · 🇦🇷 `ARS` · 🇦🇺 `AUD` · 🇦🇿 `AZN` · 🇧🇦 `BAM` · 🇧🇩 `BDT` · 🇧🇬 `BGN` · 🇧🇭 `BHD` · 🇧🇷 `BRL` · 🇨🇦 `CAD` · 🇨🇱 `CLP` · 🇨🇳 `CNY` · 🇨🇴 `COP` · 🇨🇷 `CRC` · 🇨🇿 `CZK` · 🇩🇰 `DKK` · 🇩🇴 `DOP` · 🇩🇿 `DZD` · 🇪🇬 `EGP` · 🇪🇹 `ETB` · 🇪🇺 `EUR` · 🇬🇧 `GBP` · 🇬🇪 `GEL` · 🇬🇹 `GTQ` · 🇭🇰 `HKD` · 🇭🇳 `HNL` · 🇭🇺 `HUF` · 🇮🇩 `IDR` · 🇮🇱 `ILS` · 🇮🇳 `INR` · 🇮🇸 `ISK` · 🇯🇵 `JPY` · 🇰🇪 `KES` · 🇰🇭 `KHR` · 🇰🇷 `KRW` · 🇰🇼 `KWD` · 🇰🇾 `KYD` · 🇰🇿 `KZT` · 🇱🇧 `LBP` · 🇱🇰 `LKR` · 🇱🇾 `LYD` · 🇲🇦 `MAD` · 🇲🇺 `MUR` · 🇲🇽 `MXN` · 🇲🇾 `MYR` · 🇳🇬 `NGN` · 🇳🇴 `NOK` · 🇳🇿 `NZD` · 🇴🇲 `OMR` · 🇵🇦 `PAB` · 🇵🇪 `PEN` · 🇵🇭 `PHP` · 🇵🇰 `PKR` · 🇵🇱 `PLN` · 🇶🇦 `QAR` · 🇷🇴 `RON` · 🇷🇸 `RSD` · 🇷🇺 `RUB` · 🇸🇦 `SAR` · 🇸🇪 `SEK` · 🇸🇬 `SGD` · 🇹🇭 `THB` · 🇹🇳 `TND` · 🇹🇷 `TRY` · 🇹🇼 `TWD` · 🇹🇿 `TZS` · 🇺🇦 `UAH` · 🇺🇸 `USD` · 🇺🇾 `UYU` · 🇻🇪 `VES` · 🇻🇳 `VND` · 🇿🇦 `ZAR`
 
 ## ⚖️ Published vs derived rates
 
@@ -235,6 +235,14 @@ getRate('EUR', 'CHF', { apiKey: 'art_live_...' }).then((pair) => console.log(pai
 | `getLatestRates({ apiKey })` | Free | The tax authority's full latest published table |
 | `getRatesForDate(date, { apiKey, source?, target? })` | Paid | The official table (or one pair) for a YYYY-MM-DD date |
 | `getHistory({ symbol \| source+target, from?, to? }, { apiKey })` | Paid | Daily series since 2000 |
+
+## 📥 Bulk data (no key)
+
+Need the whole archive rather than an API call? The same published tables are mirrored daily as open data:
+
+- Hugging Face: [AllRates/central-bank-exchange-rates](https://huggingface.co/datasets/AllRates/central-bank-exchange-rates) — one CSV per institution (`rates/bazg.csv`)
+- Kaggle: [allratestoday/central-bank-exchange-rates](https://www.kaggle.com/datasets/allratestoday/central-bank-exchange-rates)
+- CDN JSON: `https://cdn.jsdelivr.net/gh/AllRates-Today/central-bank-exchange-rates@main/data/bazg/latest.json`
 
 ## 🔗 Links
 
