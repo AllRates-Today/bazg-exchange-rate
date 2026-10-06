@@ -85,10 +85,10 @@ const pair = await getRate('EUR', 'CHF', { apiKey: 'art_live_...' });
 {
   bank: 'bazg',
   name: 'Swiss Federal Office for Customs and Border Security',
-  rate_date: '2026-09-25',   // Swiss Federal Office for Customs and Border Security's own publication date
+  rate_date: '2026-10-07',   // Swiss Federal Office for Customs and Border Security's own publication date
   source: 'EUR',
   target: 'CHF',
-  rate: 0.9479,
+  rate: 0.94169,
   rate_type: 'reference',
   derived: false,
   method: 'published',
@@ -113,9 +113,10 @@ console.log(table.rate_date, table.rates.length);
 {
   bank: 'bazg',
   name: 'Swiss Federal Office for Customs and Border Security',
-  rate_date: '2026-09-25',
+  rate_date: '2026-10-07',
   rates: [
-    { "base": "EUR", "quote": "CHF", "type": "reference", "value": 0.9479 },
+    { "base": "EUR", "quote": "CHF", "type": "reference", "value": 0.94169 },
+    { "base": "EUR", "quote": "CHF", "type": "monthly_average", "value": 0.9507 },
     // … the rest of the published table (73 currencies vs CHF)
   ],
   disclaimer: '…'
@@ -155,7 +156,7 @@ Paid plans. One resolved rate per publication date — ready for charting, reval
 import { getHistory } from 'bazg-exchange-rate';
 
 const series = await getHistory(
-  { source: 'EUR', target: 'CHF', from: '2026-01-01', to: '2026-09-25' },
+  { source: 'EUR', target: 'CHF', from: '2026-01-01', to: '2026-10-07' },
   { apiKey: 'art_live_...' }
 );
 ```
@@ -168,11 +169,11 @@ const series = await getHistory(
   source: 'EUR',
   target: 'CHF',
   from: '2026-01-01',
-  to: '2026-09-25',
+  to: '2026-10-07',
   count: 152,
   rates: [
     // one entry per publication date
-    { date: '2026-09-25', rate: 0.9479, rate_type: 'reference', derived: false, method: 'published' },
+    { date: '2026-10-07', rate: 0.94169, rate_type: 'reference', derived: false, method: 'published' },
     // …
   ],
   disclaimer: '…'
