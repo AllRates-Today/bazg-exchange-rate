@@ -4,6 +4,8 @@
 [![license](https://img.shields.io/npm/l/bazg-exchange-rate.svg)](https://github.com/AllRates-Today/bazg-exchange-rate/blob/main/LICENSE)
 [![zero dependencies](https://img.shields.io/badge/dependencies-0-brightgreen.svg)](https://www.npmjs.com/package/bazg-exchange-rate)
 [![TypeScript](https://img.shields.io/badge/TypeScript-types%20included-3178C6.svg)](https://www.typescriptlang.org/)
+[![EUR/CHF today](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fallratestoday.com%2Fapi%2Fopen%2Fcentral-bank%2Fbazg%3Fsource%3DEUR%26target%3DCHF&query=%24.rate&label=EUR%2FCHF%20published%20by%20Swiss%20Federal%20Office%20for%20Customs%20and%20Border%20Security&color=0A7E8C&cacheSeconds=3600)](https://allratestoday.com/tax-authority-rates-api/bazg/)
+[![rate date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fallratestoday.com%2Fapi%2Fopen%2Fcentral-bank%2Fbazg%3Fsource%3DEUR%26target%3DCHF&query=%24.rate_date&label=rate%20date&color=555&cacheSeconds=3600)](https://allratestoday.com/tax-authority-rates-api/bazg/)
 
 **Official Swiss Federal Office for Customs and Border Security (Switzerland) daily exchange rates for Node.js and TypeScript. The published tax authority rates behind tax filings, customs valuations, audits, and compliant invoicing — not market estimates, but the numbers Swiss Federal Office for Customs and Border Security itself prints, every business day.**
 
@@ -32,6 +34,79 @@ console.log(r.rate_date, r.rates.length); // the tax authority's latest publishe
 ```
 
 The open endpoint serves the *latest* table only and asks for a visible attribution link. The client below uses the keyed API, which adds point-in-time tables, history, and CSV/XML/Excel output.
+
+## 📈 Latest published table
+
+Today's full Swiss Federal Office for Customs and Border Security table, straight from the tax authority's latest publication. On GitHub it is refreshed by [a daily Action](.github/workflows/daily-table.yml) that reads the keyless endpoint above and commits only when the tax authority publishes a new table; the copy on npm is as of the package's publish date.
+
+<!-- daily-table:start -->
+Published **2026-10-09** by Swiss Federal Office for Customs and Border Security — 144 rates, first 60 shown. Updated 2026-10-08.
+
+| Base | Quote | Type | Rate |
+| --- | --- | --- | ---: |
+| AED | CHF | monthly_average | 0.223808 |
+| AED | CHF | reference | 0.2290041 |
+| ALL | CHF | monthly_average | 0.010393 |
+| ALL | CHF | reference | 0.0103054 |
+| ARS | CHF | monthly_average | 0.0005 |
+| ARS | CHF | reference | 0.00056 |
+| AUD | CHF | monthly_average | 0.5882 |
+| AUD | CHF | reference | 0.58589 |
+| AZN | CHF | monthly_average | 0.4833 |
+| AZN | CHF | reference | 0.49469 |
+| BAM | CHF | monthly_average | 0.486391 |
+| BAM | CHF | reference | 0.4819336 |
+| BDT | CHF | monthly_average | 0.006724 |
+| BDT | CHF | reference | 0.006872 |
+| BHD | CHF | monthly_average | 2.1912 |
+| BHD | CHF | reference | 2.24271 |
+| BRL | CHF | monthly_average | 0.160109 |
+| BRL | CHF | reference | 0.1675318 |
+| CAD | CHF | monthly_average | 0.5914 |
+| CAD | CHF | reference | 0.58996 |
+| CLP | CHF | monthly_average | 0.0008762 |
+| CLP | CHF | reference | 0.0008609 |
+| CNY | CHF | monthly_average | 0.122449 |
+| CNY | CHF | reference | 0.1254889 |
+| COP | CHF | monthly_average | 0.00026105 |
+| COP | CHF | reference | 0.000262065 |
+| CRC | CHF | monthly_average | 0.0018244 |
+| CRC | CHF | reference | 0.00184815 |
+| CZK | CHF | monthly_average | 0.039265 |
+| CZK | CHF | reference | 0.0386331 |
+| DKK | CHF | monthly_average | 0.127183 |
+| DKK | CHF | reference | 0.1260621 |
+| DOP | CHF | monthly_average | 0.014178 |
+| DOP | CHF | reference | 0.014265 |
+| DZD | CHF | monthly_average | 0.00623 |
+| DZD | CHF | reference | 0.0063205 |
+| EGP | CHF | monthly_average | 0.016083 |
+| EGP | CHF | reference | 0.016067 |
+| ETB | CHF | monthly_average | 0.005063 |
+| ETB | CHF | reference | 0.0051955 |
+| EUR | CHF | monthly_average | 0.9507 |
+| EUR | CHF | reference | 0.94223 |
+| GBP | CHF | monthly_average | 1.1085 |
+| GBP | CHF | reference | 1.1114 |
+| GEL | CHF | monthly_average | 0.319302 |
+| GEL | CHF | reference | 0.3281022 |
+| GTQ | CHF | monthly_average | 0.110533 |
+| GTQ | CHF | reference | 0.1137286 |
+| HKD | CHF | monthly_average | 0.104786 |
+| HKD | CHF | reference | 0.1071307 |
+| HNL | CHF | monthly_average | 0.031114 |
+| HNL | CHF | reference | 0.0320916 |
+| HUF | CHF | monthly_average | 0.0026132 |
+| HUF | CHF | reference | 0.00257889 |
+| IDR | CHF | monthly_average | 0.00004646 |
+| IDR | CHF | reference | 0.000047069 |
+| ILS | CHF | monthly_average | 0.2735 |
+| ILS | CHF | reference | 0.27494 |
+| INR | CHF | monthly_average | 0.008621 |
+| INR | CHF | reference | 0.0086905 |
+
+[Full table on the Swiss Federal Office for Customs and Border Security rates page](https://allratestoday.com/tax-authority-rates-api/bazg/) · Source: [Official rates published by BAZG, served by AllRatesToday](https://allratestoday.com/central-bank-rates-api/bazg/). Rates are as printed by the tax authority; AllRatesToday is not affiliated with it.
+<!-- daily-table:end -->
 
 ## 🔑 Get your API key
 
