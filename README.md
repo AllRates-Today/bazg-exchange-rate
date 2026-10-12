@@ -37,7 +37,9 @@ The open endpoint serves the *latest* table only and asks for a visible attribut
 
 ## 📈 Latest published table
 
-Today's full Swiss Federal Office for Customs and Border Security table, straight from the tax authority's latest publication. On GitHub it is refreshed by [a daily Action](.github/workflows/daily-table.yml) that reads the keyless endpoint above and commits only when the tax authority publishes a new table; the copy on npm is as of the package's publish date.
+[![Latest Swiss Federal Office for Customs and Border Security table](https://allratestoday.com/api/open/central-bank/bazg/table.svg)](https://allratestoday.com/tax-authority-rates-api/bazg/)
+
+The image is rendered live from the keyless endpoint above, so it follows the tax authority's publications on npm and on GitHub alike without a new release. The text copy below is there for search and copy-paste: on GitHub [a daily Action](.github/workflows/daily-table.yml) refreshes it whenever the tax authority publishes a new table; on npm it is as of the package's publish date.
 
 <!-- daily-table:start -->
 Published **2026-10-13** by Swiss Federal Office for Customs and Border Security — 144 rates, first 60 shown. Updated 2026-10-12.
