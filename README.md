@@ -160,10 +160,10 @@ const pair = await getRate('EUR', 'CHF', { apiKey: 'art_live_...' });
 {
   bank: 'bazg',
   name: 'Swiss Federal Office for Customs and Border Security',
-  rate_date: '2026-10-09',   // Swiss Federal Office for Customs and Border Security's own publication date
+  rate_date: '2026-10-13',   // Swiss Federal Office for Customs and Border Security's own publication date
   source: 'EUR',
   target: 'CHF',
-  rate: 0.94223,
+  rate: 0.93951,
   rate_type: 'reference',
   derived: false,
   method: 'published',
@@ -188,9 +188,9 @@ console.log(table.rate_date, table.rates.length);
 {
   bank: 'bazg',
   name: 'Swiss Federal Office for Customs and Border Security',
-  rate_date: '2026-10-09',
+  rate_date: '2026-10-13',
   rates: [
-    { "base": "EUR", "quote": "CHF", "type": "reference", "value": 0.94223 },
+    { "base": "EUR", "quote": "CHF", "type": "reference", "value": 0.93951 },
     { "base": "EUR", "quote": "CHF", "type": "monthly_average", "value": 0.9507 },
     // … the rest of the published table (73 currencies vs CHF)
   ],
@@ -231,7 +231,7 @@ Paid plans. One resolved rate per publication date — ready for charting, reval
 import { getHistory } from 'bazg-exchange-rate';
 
 const series = await getHistory(
-  { source: 'EUR', target: 'CHF', from: '2026-01-01', to: '2026-10-09' },
+  { source: 'EUR', target: 'CHF', from: '2026-01-01', to: '2026-10-13' },
   { apiKey: 'art_live_...' }
 );
 ```
@@ -244,11 +244,11 @@ const series = await getHistory(
   source: 'EUR',
   target: 'CHF',
   from: '2026-01-01',
-  to: '2026-10-09',
+  to: '2026-10-13',
   count: 152,
   rates: [
     // one entry per publication date
-    { date: '2026-10-09', rate: 0.94223, rate_type: 'reference', derived: false, method: 'published' },
+    { date: '2026-10-13', rate: 0.93951, rate_type: 'reference', derived: false, method: 'published' },
     // …
   ],
   disclaimer: '…'
@@ -298,6 +298,7 @@ curl "https://allratestoday.com/api/v1/central-bank/bazg/latest?format=xml&api_k
 - MCP server: `npx -y @allratestoday/central-bank-mcp` (stdio) or the hosted endpoint `https://allratestoday.com/api/mcp` — tools for official rates, history, cross-bank comparison and publication calendars
 - Already using the general SDK or MCP server? Since 2026-10-01 [`@allratestoday/sdk`](https://www.npmjs.com/package/@allratestoday/sdk) 1.4+ has `officialRates('bazg')` and [`@allratestoday/mcp-server`](https://www.npmjs.com/package/@allratestoday/mcp-server) 0.6+ has a `get_official_rates` tool — both return this source's latest table with no key, so you can add it without a second dependency
 - Claude Code plugin (no key): `/plugin marketplace add AllRates-Today/claude-code-plugin` then `/plugin install allratestoday@allratestoday` — bundles both MCP servers plus an `/official-rate bazg ...` command
+- Need dated tables or history for an evaluation? Agents can self-issue a trial key with no signup: `POST https://allratestoday.com/api/agent/keys` (send `Content-Type: application/json`) returns a 100-call key valid 7 days; the MCP servers expose it as `request_trial_key`
 - Machine-readable site guide: [llms.txt](https://allratestoday.com/llms.txt) · [for-ai-agents](https://allratestoday.com/for-ai-agents/)
 
 ## ⚖️ Published vs derived rates
