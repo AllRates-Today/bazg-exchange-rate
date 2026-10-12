@@ -40,70 +40,70 @@ The open endpoint serves the *latest* table only and asks for a visible attribut
 Today's full Swiss Federal Office for Customs and Border Security table, straight from the tax authority's latest publication. On GitHub it is refreshed by [a daily Action](.github/workflows/daily-table.yml) that reads the keyless endpoint above and commits only when the tax authority publishes a new table; the copy on npm is as of the package's publish date.
 
 <!-- daily-table:start -->
-Published **2026-10-09** by Swiss Federal Office for Customs and Border Security — 144 rates, first 60 shown. Updated 2026-10-08.
+Published **2026-10-13** by Swiss Federal Office for Customs and Border Security — 144 rates, first 60 shown. Updated 2026-10-12.
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
 | AED | CHF | monthly_average | 0.223808 |
-| AED | CHF | reference | 0.2290041 |
+| AED | CHF | reference | 0.228139 |
 | ALL | CHF | monthly_average | 0.010393 |
-| ALL | CHF | reference | 0.0103054 |
+| ALL | CHF | reference | 0.0102847 |
 | ARS | CHF | monthly_average | 0.0005 |
 | ARS | CHF | reference | 0.00056 |
 | AUD | CHF | monthly_average | 0.5882 |
-| AUD | CHF | reference | 0.58589 |
+| AUD | CHF | reference | 0.58571 |
 | AZN | CHF | monthly_average | 0.4833 |
-| AZN | CHF | reference | 0.49469 |
+| AZN | CHF | reference | 0.49285 |
 | BAM | CHF | monthly_average | 0.486391 |
-| BAM | CHF | reference | 0.4819336 |
+| BAM | CHF | reference | 0.4805523 |
 | BDT | CHF | monthly_average | 0.006724 |
-| BDT | CHF | reference | 0.006872 |
+| BDT | CHF | reference | 0.0068431 |
 | BHD | CHF | monthly_average | 2.1912 |
-| BHD | CHF | reference | 2.24271 |
+| BHD | CHF | reference | 2.2312 |
 | BRL | CHF | monthly_average | 0.160109 |
-| BRL | CHF | reference | 0.1675318 |
+| BRL | CHF | reference | 0.1679251 |
 | CAD | CHF | monthly_average | 0.5914 |
-| CAD | CHF | reference | 0.58996 |
+| CAD | CHF | reference | 0.58788 |
 | CLP | CHF | monthly_average | 0.0008762 |
-| CLP | CHF | reference | 0.0008609 |
+| CLP | CHF | reference | 0.0008583 |
 | CNY | CHF | monthly_average | 0.122449 |
-| CNY | CHF | reference | 0.1254889 |
+| CNY | CHF | reference | 0.1251976 |
 | COP | CHF | monthly_average | 0.00026105 |
-| COP | CHF | reference | 0.000262065 |
+| COP | CHF | reference | 0.000264711 |
 | CRC | CHF | monthly_average | 0.0018244 |
-| CRC | CHF | reference | 0.00184815 |
+| CRC | CHF | reference | 0.0018422 |
 | CZK | CHF | monthly_average | 0.039265 |
-| CZK | CHF | reference | 0.0386331 |
+| CZK | CHF | reference | 0.0385672 |
 | DKK | CHF | monthly_average | 0.127183 |
-| DKK | CHF | reference | 0.1260621 |
+| DKK | CHF | reference | 0.1256985 |
 | DOP | CHF | monthly_average | 0.014178 |
-| DOP | CHF | reference | 0.014265 |
+| DOP | CHF | reference | 0.0138527 |
 | DZD | CHF | monthly_average | 0.00623 |
-| DZD | CHF | reference | 0.0063205 |
+| DZD | CHF | reference | 0.0063015 |
 | EGP | CHF | monthly_average | 0.016083 |
-| EGP | CHF | reference | 0.016067 |
+| EGP | CHF | reference | 0.0161357 |
 | ETB | CHF | monthly_average | 0.005063 |
-| ETB | CHF | reference | 0.0051955 |
+| ETB | CHF | reference | 0.0051647 |
 | EUR | CHF | monthly_average | 0.9507 |
-| EUR | CHF | reference | 0.94223 |
+| EUR | CHF | reference | 0.93951 |
 | GBP | CHF | monthly_average | 1.1085 |
-| GBP | CHF | reference | 1.1114 |
+| GBP | CHF | reference | 1.11009 |
 | GEL | CHF | monthly_average | 0.319302 |
-| GEL | CHF | reference | 0.3281022 |
+| GEL | CHF | reference | 0.3268296 |
 | GTQ | CHF | monthly_average | 0.110533 |
-| GTQ | CHF | reference | 0.1137286 |
+| GTQ | CHF | reference | 0.1131792 |
 | HKD | CHF | monthly_average | 0.104786 |
-| HKD | CHF | reference | 0.1071307 |
+| HKD | CHF | reference | 0.106757 |
 | HNL | CHF | monthly_average | 0.031114 |
-| HNL | CHF | reference | 0.0320916 |
+| HNL | CHF | reference | 0.0319732 |
 | HUF | CHF | monthly_average | 0.0026132 |
-| HUF | CHF | reference | 0.00257889 |
+| HUF | CHF | reference | 0.0025772 |
 | IDR | CHF | monthly_average | 0.00004646 |
-| IDR | CHF | reference | 0.000047069 |
+| IDR | CHF | reference | 0.000046874 |
 | ILS | CHF | monthly_average | 0.2735 |
-| ILS | CHF | reference | 0.27494 |
+| ILS | CHF | reference | 0.27438 |
 | INR | CHF | monthly_average | 0.008621 |
-| INR | CHF | reference | 0.0086905 |
+| INR | CHF | reference | 0.0086576 |
 
 [Full table on the Swiss Federal Office for Customs and Border Security rates page](https://allratestoday.com/tax-authority-rates-api/bazg/) · Source: [Official rates published by BAZG, served by AllRatesToday](https://allratestoday.com/central-bank-rates-api/bazg/). Rates are as printed by the tax authority; AllRatesToday is not affiliated with it.
 <!-- daily-table:end -->
