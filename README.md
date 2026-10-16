@@ -107,7 +107,7 @@ Published **2026-10-19** by Swiss Federal Office for Customs and Border Security
 | INR | CHF | monthly_average | 0.008621 |
 | INR | CHF | reference | 0.0088244 |
 
-[Full table on the Swiss Federal Office for Customs and Border Security rates page](https://allratestoday.com/tax-authority-rates-api/bazg/) · Source: [Official rates published by BAZG, served by AllRatesToday](https://allratestoday.com/central-bank-rates-api/bazg/). Rates are as printed by the tax authority; AllRatesToday is not affiliated with it.
+[Full table on the Swiss Federal Office for Customs and Border Security rates page](https://allratestoday.com/tax-authority-rates-api/bazg/) · Source: [Official rates published by BAZG, served by AllRatesToday](https://allratestoday.com/tax-authority-rates-api/bazg/). Rates are as printed by the tax authority; AllRatesToday is not affiliated with it.
 <!-- daily-table:end -->
 
 ## 🔑 Get your API key
@@ -300,7 +300,7 @@ curl "https://allratestoday.com/api/v1/central-bank/bazg/latest?format=xml&api_k
 - MCP server: `npx -y @allratestoday/central-bank-mcp` (stdio) or the hosted endpoint `https://allratestoday.com/api/mcp` — tools for official rates, history, cross-bank comparison and publication calendars
 - Already using the general SDK or MCP server? Since 2026-10-01 [`@allratestoday/sdk`](https://www.npmjs.com/package/@allratestoday/sdk) 1.4+ has `officialRates('bazg')` and [`@allratestoday/mcp-server`](https://www.npmjs.com/package/@allratestoday/mcp-server) 0.6+ has a `get_official_rates` tool — both return this source's latest table with no key, so you can add it without a second dependency
 - Claude Code plugin (no key): `/plugin marketplace add AllRates-Today/claude-code-plugin` then `/plugin install allratestoday@allratestoday` — bundles both MCP servers plus an `/official-rate bazg ...` command
-- Need dated tables or history for an evaluation? Agents can self-issue a trial key with no signup: `POST https://allratestoday.com/api/agent/keys` (send `Content-Type: application/json`) returns a 100-call key valid 7 days; the MCP servers expose it as `request_trial_key`
+- Evaluating? Agents can self-issue a trial key with no signup: `POST https://allratestoday.com/api/agent/keys` (send `Content-Type: application/json`) returns a 100-call key valid 7 days that covers the free-plan methods (latest table, pairs); dated tables and history need a [paid plan](https://allratestoday.com/pricing/). The MCP servers expose it as `request_trial_key`
 - Machine-readable site guide: [llms.txt](https://allratestoday.com/llms.txt) · [for-ai-agents](https://allratestoday.com/for-ai-agents/)
 
 ## ⚖️ Published vs derived rates
