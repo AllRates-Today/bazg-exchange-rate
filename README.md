@@ -33,16 +33,17 @@ const r = await fetch('https://allratestoday.com/api/open/central-bank/bazg').th
 console.log(r.rate_date, r.rates.length); // the tax authority's latest published table, no key
 ```
 
-The open endpoint serves the *latest* table only and asks for a visible attribution link. The client below uses the keyed API, which adds point-in-time tables, history, and CSV/XML/Excel output.
+The open endpoint serves the *latest* table only (JSON by default; add `?format=csv`, `xml` or `xlsx` for a file) and asks for a visible attribution link. The client below uses the keyed API, which adds point-in-time tables and history.
 
 ## 📈 Latest published table
 
 [![Latest Swiss Federal Office for Customs and Border Security table](https://allratestoday.com/api/open/central-bank/bazg/table.svg)](https://allratestoday.com/tax-authority-rates-api/bazg/)
 
-The image is rendered live from the keyless endpoint above, so it follows the tax authority's publications on npm and on GitHub alike without a new release. The text copy below is there for search and copy-paste: on GitHub [a daily Action](.github/workflows/daily-table.yml) refreshes it whenever the tax authority publishes a new table; on npm it is as of the package's publish date.
+The image is rendered live from the keyless endpoint above, so it follows the tax authority's publications on npm and on GitHub alike without a new release. The same table as text is folded below for search and copy-paste: on GitHub [a daily Action](.github/workflows/daily-table.yml) refreshes it whenever the tax authority publishes a new table; on npm it is as of the package's publish date.
 
 <!-- daily-table:start -->
-Published **2026-10-19** by Swiss Federal Office for Customs and Border Security — 144 rates, first 60 shown. Updated 2026-10-16.
+<details>
+<summary>Table as text: published 2026-10-19 by Swiss Federal Office for Customs and Border Security — 144 rates, first 60 shown. Updated 2026-10-19.</summary>
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
@@ -106,6 +107,8 @@ Published **2026-10-19** by Swiss Federal Office for Customs and Border Security
 | ILS | CHF | reference | 0.27076 |
 | INR | CHF | monthly_average | 0.008621 |
 | INR | CHF | reference | 0.0088244 |
+
+</details>
 
 [Full table on the Swiss Federal Office for Customs and Border Security rates page](https://allratestoday.com/tax-authority-rates-api/bazg/) · Source: [Official rates published by BAZG, served by AllRatesToday](https://allratestoday.com/tax-authority-rates-api/bazg/). Rates are as printed by the tax authority; AllRatesToday is not affiliated with it.
 <!-- daily-table:end -->
@@ -379,7 +382,8 @@ Need the whole archive rather than an API call? The same published tables are mi
 - [All tax authority sources](https://allratestoday.com/tax-authority-rates-api/)
 - [Package docs on the site](https://allratestoday.com/docs/sdk/bazg-exchange-rate/) · [ERP integration guides](https://allratestoday.com/docs/integrations/)
 - [API documentation](https://allratestoday.com/docs/#central-bank) · [Interactive reference](https://allratestoday.com/api-reference/) · [Methodology](https://allratestoday.com/official-rates-methodology/)
-- [Register (free)](https://allratestoday.com/register) · [Pricing](https://allratestoday.com/pricing/)
+- [Register (Free)](https://allratestoday.com/register) · [Dashboard](https://allratestoday.com/profile) · [Pricing](https://allratestoday.com/pricing/)
+- [Status](https://allratestoday.com/status)
 - [GitHub](https://github.com/AllRates-Today/bazg-exchange-rate)
 
 ## 📜 License
