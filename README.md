@@ -20,6 +20,10 @@
 
 > **Official rate, not mid-market:** every value here is a number Swiss Federal Office for Customs and Border Security itself published, fixed once printed and carrying the tax authority's own `rate_date` — what filings and audits require. Need the live mid-market rate for pricing or display instead? Use the [mid-market API](https://allratestoday.com/docs/) or [`@allratestoday/sdk`](https://www.npmjs.com/package/@allratestoday/sdk). The two can diverge by several percent.
 
+## 🔑 Get your API key
+
+Get a free API key at [allratestoday.com/register](https://allratestoday.com/register) — no credit card required. Latest rates are on every plan, including free.
+
 ## ⚡ Try it without a key
 
 The latest Swiss Federal Office for Customs and Border Security table is also served keyless, CORS-open and edge-cached, for evaluation, embeds and AI agents:
@@ -43,7 +47,7 @@ The image is rendered live from the keyless endpoint above, so it follows the ta
 
 <!-- daily-table:start -->
 <details>
-<summary>Table as text: published 2026-10-19 by Swiss Federal Office for Customs and Border Security — 144 rates, first 60 shown. Updated 2026-10-19.</summary>
+<summary>Table as text: published 2026-10-19 by Swiss Federal Office for Customs and Border Security — 144 rates, first 60 shown. Updated 2026-10-20.</summary>
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
@@ -112,10 +116,6 @@ The image is rendered live from the keyless endpoint above, so it follows the ta
 
 [Full table on the Swiss Federal Office for Customs and Border Security rates page](https://allratestoday.com/tax-authority-rates-api/bazg/) · Source: [Official rates published by BAZG, served by AllRatesToday](https://allratestoday.com/tax-authority-rates-api/bazg/). Rates are as printed by the tax authority; AllRatesToday is not affiliated with it.
 <!-- daily-table:end -->
-
-## 🔑 Get your API key
-
-Get a free API key at [allratestoday.com/register](https://allratestoday.com/register) — no credit card required. Latest rates are on every plan, including free.
 
 ## 📦 Installation
 
