@@ -24,93 +24,78 @@
 
 Get a free API key at [allratestoday.com/register](https://allratestoday.com/register) — no credit card required. Latest rates are on every plan, including free.
 
-## ⚡ Try it without a key
-
-The latest Swiss Federal Office for Customs and Border Security table is also served keyless, CORS-open and edge-cached, for evaluation, embeds and AI agents:
-
-```bash
-curl "https://allratestoday.com/api/open/central-bank/bazg?source=EUR&target=CHF"
-```
-
-```js
-const r = await fetch('https://allratestoday.com/api/open/central-bank/bazg').then((x) => x.json());
-console.log(r.rate_date, r.rates.length); // the tax authority's latest published table, no key
-```
-
-The open endpoint serves the *latest* table only (JSON by default; add `?format=csv`, `xml` or `xlsx` for a file) and is free to use with a visible, followable link where the rates are shown: `<a href="https://allratestoday.com">Exchange rates by AllRatesToday</a>` (terms: <https://allratestoday.com/terms/#attribution>). The client below uses the keyed API, which adds point-in-time tables and history; with a key the link is appreciated, not required.
-
 ## 📈 Latest published table
 
 [![Latest Swiss Federal Office for Customs and Border Security table](https://allratestoday.com/api/open/central-bank/bazg/table.svg)](https://allratestoday.com/tax-authority-rates-api/bazg/)
 
-The image is rendered live from the keyless endpoint above, so it follows the tax authority's publications on npm and on GitHub alike without a new release. The same table as text is folded below for search and copy-paste: on GitHub [a daily Action](.github/workflows/daily-table.yml) refreshes it whenever the tax authority publishes a new table; on npm it is as of the package's publish date.
+The image is rendered live from the keyless endpoint, so it follows the tax authority's publications on npm and on GitHub alike without a new release. The same table as text is folded below for search and copy-paste: on GitHub [a daily Action](.github/workflows/daily-table.yml) refreshes it whenever the tax authority publishes a new table; on npm it is as of the package's publish date.
 
 <!-- daily-table:start -->
 <details>
-<summary>Table as text: published 2026-10-29 by Swiss Federal Office for Customs and Border Security — 144 rates, first 60 shown. Updated 2026-10-29.</summary>
+<summary>Table as text: published 2026-10-30 by Swiss Federal Office for Customs and Border Security — 144 rates, first 60 shown. Updated 2026-10-30.</summary>
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
 | AED | CHF | monthly_average | 0.223808 |
-| AED | CHF | reference | 0.2282339 |
+| AED | CHF | reference | 0.2277939 |
 | ALL | CHF | monthly_average | 0.010393 |
-| ALL | CHF | reference | 0.0103329 |
+| ALL | CHF | reference | 0.0103182 |
 | ARS | CHF | monthly_average | 0.0005 |
 | ARS | CHF | reference | 0.00055 |
 | AUD | CHF | monthly_average | 0.5882 |
-| AUD | CHF | reference | 0.58984 |
+| AUD | CHF | reference | 0.59049 |
 | AZN | CHF | monthly_average | 0.4833 |
-| AZN | CHF | reference | 0.49303 |
+| AZN | CHF | reference | 0.49208 |
 | BAM | CHF | monthly_average | 0.486391 |
-| BAM | CHF | reference | 0.4768965 |
+| BAM | CHF | reference | 0.4769816 |
 | BDT | CHF | monthly_average | 0.006724 |
-| BDT | CHF | reference | 0.0067895 |
+| BDT | CHF | reference | 0.0067822 |
 | BHD | CHF | monthly_average | 2.1912 |
-| BHD | CHF | reference | 2.23017 |
+| BHD | CHF | reference | 2.22967 |
 | BRL | CHF | monthly_average | 0.160109 |
-| BRL | CHF | reference | 0.1566419 |
+| BRL | CHF | reference | 0.1564692 |
 | CAD | CHF | monthly_average | 0.5914 |
-| CAD | CHF | reference | 0.59613 |
+| CAD | CHF | reference | 0.59834 |
 | CLP | CHF | monthly_average | 0.0008762 |
-| CLP | CHF | reference | 0.00085039 |
+| CLP | CHF | reference | 0.00084739 |
 | CNY | CHF | monthly_average | 0.122449 |
-| CNY | CHF | reference | 0.1257122 |
+| CNY | CHF | reference | 0.1255491 |
 | COP | CHF | monthly_average | 0.00026105 |
-| COP | CHF | reference | 0.00026864 |
+| COP | CHF | reference | 0.00026765 |
 | CRC | CHF | monthly_average | 0.0018244 |
-| CRC | CHF | reference | 0.00184502 |
+| CRC | CHF | reference | 0.00184527 |
 | CZK | CHF | monthly_average | 0.039265 |
-| CZK | CHF | reference | 0.0383587 |
+| CZK | CHF | reference | 0.0382952 |
 | DKK | CHF | monthly_average | 0.127183 |
-| DKK | CHF | reference | 0.124732 |
+| DKK | CHF | reference | 0.1247603 |
 | DOP | CHF | monthly_average | 0.014178 |
-| DOP | CHF | reference | 0.0140645 |
+| DOP | CHF | reference | 0.0140632 |
 | DZD | CHF | monthly_average | 0.00623 |
-| DZD | CHF | reference | 0.0062601 |
+| DZD | CHF | reference | 0.0062549 |
 | EGP | CHF | monthly_average | 0.016083 |
-| EGP | CHF | reference | 0.0149668 |
+| EGP | CHF | reference | 0.0149359 |
 | ETB | CHF | monthly_average | 0.005063 |
-| ETB | CHF | reference | 0.0051786 |
+| ETB | CHF | reference | 0.0051318 |
 | EUR | CHF | monthly_average | 0.9507 |
-| EUR | CHF | reference | 0.93232 |
+| EUR | CHF | reference | 0.93241 |
 | GBP | CHF | monthly_average | 1.1085 |
-| GBP | CHF | reference | 1.11504 |
+| GBP | CHF | reference | 1.11443 |
 | GEL | CHF | monthly_average | 0.319302 |
-| GEL | CHF | reference | 0.3269351 |
+| GEL | CHF | reference | 0.3263936 |
 | GTQ | CHF | monthly_average | 0.110533 |
-| GTQ | CHF | reference | 0.1130992 |
+| GTQ | CHF | reference | 0.1131059 |
 | HKD | CHF | monthly_average | 0.104786 |
-| HKD | CHF | reference | 0.1068277 |
+| HKD | CHF | reference | 0.1066156 |
 | HNL | CHF | monthly_average | 0.031114 |
-| HNL | CHF | reference | 0.0315076 |
+| HNL | CHF | reference | 0.0314938 |
 | HUF | CHF | monthly_average | 0.0026132 |
-| HUF | CHF | reference | 0.00254278 |
+| HUF | CHF | reference | 0.00254242 |
 | IDR | CHF | monthly_average | 0.00004646 |
-| IDR | CHF | reference | 0.000046208 |
+| IDR | CHF | reference | 0.000046248 |
 | ILS | CHF | monthly_average | 0.2735 |
-| ILS | CHF | reference | 0.27494 |
+| ILS | CHF | reference | 0.26905 |
 | INR | CHF | monthly_average | 0.008621 |
-| INR | CHF | reference | 0.0088123 |
+| INR | CHF | reference | 0.008789 |
 
 </details>
 
