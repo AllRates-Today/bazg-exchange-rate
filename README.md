@@ -32,70 +32,70 @@ The image is rendered live from the keyless endpoint, so it follows the tax auth
 
 <!-- daily-table:start -->
 <details>
-<summary>Table as text: published 2026-11-03 by Swiss Federal Office for Customs and Border Security — 144 rates, first 60 shown. Updated 2026-11-02.</summary>
+<summary>Table as text: published 2026-11-04 by Swiss Federal Office for Customs and Border Security — 144 rates, first 60 shown. Updated 2026-11-04.</summary>
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
 | AED | CHF | monthly_average | 0.228225 |
-| AED | CHF | reference | 0.2269687 |
+| AED | CHF | reference | 0.2254835 |
 | ALL | CHF | monthly_average | 0.01035 |
-| ALL | CHF | reference | 0.0102782 |
+| ALL | CHF | reference | 0.0102462 |
 | ARS | CHF | monthly_average | 0.0006 |
-| ARS | CHF | reference | 0.00055 |
+| ARS | CHF | reference | 0.00054 |
 | AUD | CHF | monthly_average | 0.5849 |
-| AUD | CHF | reference | 0.58542 |
+| AUD | CHF | reference | 0.57951 |
 | AZN | CHF | monthly_average | 0.493 |
-| AZN | CHF | reference | 0.49029 |
+| AZN | CHF | reference | 0.48708 |
 | BAM | CHF | monthly_average | 0.482292 |
-| BAM | CHF | reference | 0.4759591 |
+| BAM | CHF | reference | 0.4736018 |
 | BDT | CHF | monthly_average | 0.006843 |
-| BDT | CHF | reference | 0.006748 |
+| BDT | CHF | reference | 0.0066979 |
 | BHD | CHF | monthly_average | 2.2329 |
-| BHD | CHF | reference | 2.21646 |
+| BHD | CHF | reference | 2.20635 |
 | BRL | CHF | monthly_average | 0.164848 |
-| BRL | CHF | reference | 0.1533208 |
+| BRL | CHF | reference | 0.1522923 |
 | CAD | CHF | monthly_average | 0.591 |
-| CAD | CHF | reference | 0.59605 |
+| CAD | CHF | reference | 0.59189 |
 | CLP | CHF | monthly_average | 0.0008588 |
-| CLP | CHF | reference | 0.0008396 |
+| CLP | CHF | reference | 0.00084745 |
 | CNY | CHF | monthly_average | 0.12517 |
-| CNY | CHF | reference | 0.1252461 |
+| CNY | CHF | reference | 0.1242492 |
 | COP | CHF | monthly_average | 0.00026091 |
-| COP | CHF | reference | 0.000259085 |
+| COP | CHF | reference | 0.000259701 |
 | CRC | CHF | monthly_average | 0.0018425 |
-| CRC | CHF | reference | 0.00183374 |
+| CRC | CHF | reference | 0.00182696 |
 | CZK | CHF | monthly_average | 0.038699 |
-| CZK | CHF | reference | 0.0382248 |
+| CZK | CHF | reference | 0.0381021 |
 | DKK | CHF | monthly_average | 0.126132 |
-| DKK | CHF | reference | 0.1245007 |
+| DKK | CHF | reference | 0.1238816 |
 | DOP | CHF | monthly_average | 0.014248 |
-| DOP | CHF | reference | 0.0139257 |
+| DOP | CHF | reference | 0.0140601 |
 | DZD | CHF | monthly_average | 0.006309 |
-| DZD | CHF | reference | 0.006213 |
+| DZD | CHF | reference | 0.0061596 |
 | EGP | CHF | monthly_average | 0.015889 |
-| EGP | CHF | reference | 0.0149017 |
+| EGP | CHF | reference | 0.0149672 |
 | ETB | CHF | monthly_average | 0.005162 |
-| ETB | CHF | reference | 0.0051526 |
+| ETB | CHF | reference | 0.0051222 |
 | EUR | CHF | monthly_average | 0.9428 |
-| EUR | CHF | reference | 0.93048 |
+| EUR | CHF | reference | 0.92581 |
 | GBP | CHF | monthly_average | 1.1118 |
-| GBP | CHF | reference | 1.11565 |
+| GBP | CHF | reference | 1.10949 |
 | GEL | CHF | monthly_average | 0.326538 |
-| GEL | CHF | reference | 0.3241365 |
+| GEL | CHF | reference | 0.3224794 |
 | GTQ | CHF | monthly_average | 0.113189 |
-| GTQ | CHF | reference | 0.1122075 |
+| GTQ | CHF | reference | 0.1118365 |
 | HKD | CHF | monthly_average | 0.106792 |
-| HKD | CHF | reference | 0.1062217 |
+| HKD | CHF | reference | 0.1054945 |
 | HNL | CHF | monthly_average | 0.031922 |
-| HNL | CHF | reference | 0.0313843 |
+| HNL | CHF | reference | 0.0318072 |
 | HUF | CHF | monthly_average | 0.0025813 |
-| HUF | CHF | reference | 0.00254458 |
+| HUF | CHF | reference | 0.00254323 |
 | IDR | CHF | monthly_average | 0.00004677 |
-| IDR | CHF | reference | 0.000045905 |
+| IDR | CHF | reference | 0.000045682 |
 | ILS | CHF | monthly_average | 0.2736 |
-| ILS | CHF | reference | 0.26599 |
+| ILS | CHF | reference | 0.264 |
 | INR | CHF | monthly_average | 0.008758 |
-| INR | CHF | reference | 0.0087782 |
+| INR | CHF | reference | 0.0087432 |
 
 </details>
 
