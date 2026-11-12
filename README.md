@@ -32,70 +32,70 @@ The image is rendered live from the keyless endpoint, so it follows the tax auth
 
 <!-- daily-table:start -->
 <details>
-<summary>Table as text: published 2026-11-11 by Swiss Federal Office for Customs and Border Security — 144 rates, first 60 shown. Updated 2026-11-11.</summary>
+<summary>Table as text: published 2026-11-12 by Swiss Federal Office for Customs and Border Security — 144 rates, first 60 shown. Updated 2026-11-12.</summary>
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
 | AED | CHF | monthly_average | 0.228225 |
-| AED | CHF | reference | 0.2254835 |
+| AED | CHF | reference | 0.227195 |
 | ALL | CHF | monthly_average | 0.01035 |
-| ALL | CHF | reference | 0.0102768 |
+| ALL | CHF | reference | 0.010316 |
 | ARS | CHF | monthly_average | 0.0006 |
 | ARS | CHF | reference | 0.00054 |
 | AUD | CHF | monthly_average | 0.5849 |
-| AUD | CHF | reference | 0.57321 |
+| AUD | CHF | reference | 0.57389 |
 | AZN | CHF | monthly_average | 0.493 |
-| AZN | CHF | reference | 0.48708 |
+| AZN | CHF | reference | 0.49077 |
 | BAM | CHF | monthly_average | 0.482292 |
-| BAM | CHF | reference | 0.4751237 |
+| BAM | CHF | reference | 0.476475 |
 | BDT | CHF | monthly_average | 0.006843 |
-| BDT | CHF | reference | 0.0067175 |
+| BDT | CHF | reference | 0.0067144 |
 | BHD | CHF | monthly_average | 2.2329 |
-| BHD | CHF | reference | 2.20882 |
+| BHD | CHF | reference | 2.21748 |
 | BRL | CHF | monthly_average | 0.164848 |
-| BRL | CHF | reference | 0.1503347 |
+| BRL | CHF | reference | 0.1494554 |
 | CAD | CHF | monthly_average | 0.591 |
-| CAD | CHF | reference | 0.58649 |
+| CAD | CHF | reference | 0.58767 |
 | CLP | CHF | monthly_average | 0.0008588 |
-| CLP | CHF | reference | 0.00085506 |
+| CLP | CHF | reference | 0.00084817 |
 | CNY | CHF | monthly_average | 0.12517 |
-| CNY | CHF | reference | 0.124126 |
+| CNY | CHF | reference | 0.1250299 |
 | COP | CHF | monthly_average | 0.00026091 |
-| COP | CHF | reference | 0.000255076 |
+| COP | CHF | reference | 0.00025454 |
 | CRC | CHF | monthly_average | 0.0018425 |
-| CRC | CHF | reference | 0.00183604 |
+| CRC | CHF | reference | 0.00184506 |
 | CZK | CHF | monthly_average | 0.038699 |
-| CZK | CHF | reference | 0.0381883 |
+| CZK | CHF | reference | 0.0382793 |
 | DKK | CHF | monthly_average | 0.126132 |
-| DKK | CHF | reference | 0.1242714 |
+| DKK | CHF | reference | 0.1245754 |
 | DOP | CHF | monthly_average | 0.014248 |
-| DOP | CHF | reference | 0.0138484 |
+| DOP | CHF | reference | 0.0141232 |
 | DZD | CHF | monthly_average | 0.006309 |
-| DZD | CHF | reference | 0.0061518 |
+| DZD | CHF | reference | 0.0061767 |
 | EGP | CHF | monthly_average | 0.015889 |
-| EGP | CHF | reference | 0.0153759 |
+| EGP | CHF | reference | 0.015655 |
 | ETB | CHF | monthly_average | 0.005162 |
-| ETB | CHF | reference | 0.0051329 |
+| ETB | CHF | reference | 0.0051681 |
 | EUR | CHF | monthly_average | 0.9428 |
-| EUR | CHF | reference | 0.92894 |
+| EUR | CHF | reference | 0.93121 |
 | GBP | CHF | monthly_average | 1.1118 |
-| GBP | CHF | reference | 1.11296 |
+| GBP | CHF | reference | 1.11324 |
 | GEL | CHF | monthly_average | 0.326538 |
-| GEL | CHF | reference | 0.3226302 |
+| GEL | CHF | reference | 0.325692 |
 | GTQ | CHF | monthly_average | 0.113189 |
-| GTQ | CHF | reference | 0.1121416 |
+| GTQ | CHF | reference | 0.1121888 |
 | HKD | CHF | monthly_average | 0.106792 |
-| HKD | CHF | reference | 0.1055652 |
+| HKD | CHF | reference | 0.1063025 |
 | HNL | CHF | monthly_average | 0.031922 |
-| HNL | CHF | reference | 0.0318944 |
+| HNL | CHF | reference | 0.0314816 |
 | HUF | CHF | monthly_average | 0.0025813 |
-| HUF | CHF | reference | 0.00256481 |
+| HUF | CHF | reference | 0.00255783 |
 | IDR | CHF | monthly_average | 0.00004677 |
-| IDR | CHF | reference | 0.000045894 |
+| IDR | CHF | reference | 0.000046026 |
 | ILS | CHF | monthly_average | 0.2736 |
-| ILS | CHF | reference | 0.26306 |
+| ILS | CHF | reference | 0.26333 |
 | INR | CHF | monthly_average | 0.008758 |
-| INR | CHF | reference | 0.0088195 |
+| INR | CHF | reference | 0.0088839 |
 
 </details>
 
