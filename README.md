@@ -32,7 +32,7 @@ The image is rendered live from the keyless endpoint, so it follows the tax auth
 
 <!-- daily-table:start -->
 <details>
-<summary>Table as text: published 2026-11-13 by Swiss Federal Office for Customs and Border Security — 144 rates, first 60 shown. Updated 2026-11-13.</summary>
+<summary>Table as text: published 2026-11-13 by Swiss Federal Office for Customs and Border Security — 144 rates, first 60 shown. Updated 2026-11-15.</summary>
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
